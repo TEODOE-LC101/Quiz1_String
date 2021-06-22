@@ -1,12 +1,10 @@
 // Part 1. set the organization name to "LaunchCode"
-let organizationName;
-
-
-
 const input = require('readline-sync');
 
-let fruit;
-let quantity;
+let organizationName;
+
+let fruit = "";
+let quantity = "";
 let total = -1;
 
 function getInputs(){
@@ -14,13 +12,13 @@ function getInputs(){
 
 // 2a. Ask the user what kind of fruit they want. Store the result in the variable fruit.
 fruit = input.question("What kind of fruit would you like?: ");
+console.log(fruit);
 
 // 2b. ask them for the quantity
-quanity = input.question("What kind of fruit would you like?: ");
-
+quantity = input.question("What kind of fruit would you like?: ");
+console.log(quantity);
 // 2c. convert their answer into a number and store it in the variable quantity
-fruit = Number();
-quanity = Number();
+quantity = Number(quantity);
 }
 
 function calculateTotal(fruit, quantity) {
@@ -38,14 +36,19 @@ Based on the user answer to the questions, calculate their total (item price * q
 
 For example, if the user said the fruit is Orange, and the quantity is 3, then the total is 3. If the user said the fruit is Banana and the total is 2, then total is 0.50. 
 */
+let price = {}; 
+price['apple'] = .5;
+price['orange'] = 1.00;
+price['peach'] = 1.25;
+price['banana'] = .25;
 
+total = price * quantity;
 
+total = price * quantity;
 
+for (){
 
-
-
-
-
+}
 
   // don't edit this line
   return total;
@@ -58,6 +61,9 @@ function displayTotal() {
 
 
 }
+getInputs();
+calculateTotal(fruit,quantity)
+displayTotal()
 
 // END OF QUIZ. THAT'S IT. YOU'RE DONE!!!!
 
