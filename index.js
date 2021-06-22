@@ -19,8 +19,8 @@ fruit = input.question("What kind of fruit would you like?: ");
 quanity = input.question("What kind of fruit would you like?: ");
 
 // 2c. convert their answer into a number and store it in the variable quantity
-fruit = Number(fType);
-quanity = Number(fAmount);
+fruit = Number();
+quanity = Number();
 }
 
 function calculateTotal(fruit, quantity) {
